@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import NavLinks from "./NavLinks";
 
 const navItems = [
     "হোম",
@@ -68,20 +69,7 @@ export default function Header() {
                     </div>
 
                     {/* Navigation */}
-                    <nav className="flex justify-center overflow-x-auto">
-                        <ul className="flex items-center gap-5 whitespace-nowrap px-2 py-3 text-sm text-gray-800">
-                            {navItems.map((item) => (
-                                <li key={item}>
-                                    <a
-                                        href="#"
-                                        className="transition hover:text-red-700"
-                                    >
-                                        {item}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
+                    <NavLinks></NavLinks>
                 </div>
             </div>
 
